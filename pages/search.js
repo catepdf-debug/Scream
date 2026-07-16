@@ -6,14 +6,13 @@ export async function renderSearch(content, initialQuery = "") {
   const { categories, fichiers } = await getManifest();
 
   content.innerHTML = `
-    <form id="search-form" class="search-form">
-      <input type="search" id="search-input" placeholder="Rechercher..." autocomplete="off" value="${escapeHtml(initialQuery)}" />
-      <button type="submit">Rechercher</button>
-    </form>
-    <div id="search-results"></div>
+    <section class="search-results-section">
+      <h2>Résultats de recherche</h2>
+      <div id="search-results"></div>
+    </section>
   `;
 
-  const input = document.getElementById("search-input");
+  const input = document.getElementById("global-search-input");
   const results = document.getElementById("search-results");
 
   const categoryFuse = new Fuse(categories, { keys: ["nom"], threshold: 0.3 });
@@ -54,16 +53,27 @@ export async function renderSearch(content, initialQuery = "") {
     `;
   }
 
-  input.addEventListener("input", () => {
-    const q = input.value.trim();
-    history.replaceState(null, "", `#/recherche?q=${encodeURIComponent(q)}`);
-    runSearch(q);
-  });
+  if (input && !input.dataset.searchBound) {
+    input.addEventListener("input", () => {
+      const q = input.value.trim();
+      history.replaceState(null, "", q ? `#/recherche?q=${encodeURIComponent(q)}` : "#/recherche");
+      runSearch(q);
+    });
+    input.dataset.searchBound = "true";
+  }
 
-  document.getElementById("search-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    runSearch(input.value.trim());
-  });
+  const form = document.getElementById("global-search-form");
+  if (form && !form.dataset.searchBound) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      runSearch(input.value.trim());
+    });
+    form.dataset.searchBound = "true";
+  }
+
+  if (input) {
+    input.value = initialQuery;
+  }
 
   runSearch(initialQuery);
 }

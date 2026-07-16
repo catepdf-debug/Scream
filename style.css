@@ -56,6 +56,20 @@ main#content {
   min-height: 70vh;
 }
 
+.app-search-bar {
+  position: sticky;
+  bottom: 0;
+  max-width: 640px;
+  margin: 0 auto 1rem;
+  padding: 0 1rem 1rem;
+  background: var(--color-bg);
+  z-index: 10;
+}
+
+.app-search-bar .search-form {
+  margin-bottom: 0;
+}
+
 .search-form {
   display: flex;
   gap: 0.5rem;
