@@ -63,16 +63,17 @@ export async function renderSearch(content, initialQuery = "") {
   }
 
   const form = document.getElementById("global-search-form");
-  if (form && !form.dataset.searchBound) {
+  if (form && !form.dataset.searchRendererBound) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      runSearch(input.value.trim());
+      const q = input.value.trim();
+      runSearch(q);
+      if (input) {
+        input.value = "";
+      }
+      history.replaceState(null, "", q ? `#/recherche?q=${encodeURIComponent(q)}` : "#/recherche");
     });
-    form.dataset.searchBound = "true";
-  }
-
-  if (input) {
-    input.value = initialQuery;
+    form.dataset.searchRendererBound = "true";
   }
 
   runSearch(initialQuery);

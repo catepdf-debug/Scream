@@ -16,7 +16,8 @@ function syncGlobalSearch(query = "") {
 function goToSearch(query) {
   const normalized = query.trim();
   const target = normalized ? `#/recherche?q=${encodeURIComponent(normalized)}` : "#/recherche";
-  location.hash = target;
+  history.replaceState(null, "", target);
+  router();
 }
 
 if (globalSearchForm && globalSearchInput) {
@@ -25,6 +26,16 @@ if (globalSearchForm && globalSearchInput) {
     goToSearch(globalSearchInput.value);
   });
   globalSearchForm.dataset.searchBound = "true";
+
+  globalSearchInput.addEventListener("input", () => {
+    const normalized = globalSearchInput.value.trim();
+    const target = normalized ? `#/recherche?q=${encodeURIComponent(normalized)}` : "#/recherche";
+
+    if (location.hash !== target) {
+      history.replaceState(null, "", target);
+      router();
+    }
+  });
 }
 
 function parseHash() {
@@ -40,9 +51,7 @@ function router() {
   const [path, id] = segments;
   const searchQuery = params.get("q") || "";
 
-  if (searchQuery) {
-    syncGlobalSearch(searchQuery);
-  }
+  syncGlobalSearch(searchQuery);
 
   if (!path) return renderHome(content);
   if (path === "categories") return renderCategories(content);
