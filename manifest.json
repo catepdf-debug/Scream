@@ -1,0 +1,66 @@
+{
+  "categories": [
+    { "id": "manuels", "nom": "Manuels" },
+    { "id": "fiches-techniques", "nom": "Fiches techniques" },
+    { "id": "guides", "nom": "Guides pratiques" },
+    { "id": "animation", "nom": "Nos animations" }
+  ],
+  "fichiers": [
+    {
+      "id": "manuel-animation",
+      "nom": "Manuel des animations",
+      "categorie": "animation",
+      "motsCles": ["animation", "demarrage", "utilisation"],
+      "description": "Guide complet de prise en main des animations.",
+      "fichier": "https://drive.google.com/file/d/1QkU1MYhaRIlvj3VjCibKG3f_dhPwXMdf/view"
+    },
+    {
+      "id": "manuel-utilisateur",
+      "nom": "Manuel utilisateur",
+      "categorie": "manuels",
+      "motsCles": ["installation", "demarrage", "utilisation"],
+      "description": "Guide complet de prise en main du produit.",
+      "fichier": "https://drive.google.com/file/d/1QkU1MYhaRIlvj3VjCibKG3f_dhPwXMdf/view"
+    },
+    {
+      "id": "manuel-maintenance",
+      "nom": "Manuel de maintenance",
+      "categorie": "manuels",
+      "motsCles": ["entretien", "reparation", "pieces"],
+      "description": "Procédures d'entretien et de réparation courantes.",
+      "fichier": "pdfs/manuel-maintenance.pdf"
+    },
+    {
+      "id": "fiche-technique-moteur",
+      "nom": "Fiche technique moteur",
+      "categorie": "fiches-techniques",
+      "motsCles": ["moteur", "specifications", "puissance"],
+      "description": "Caractéristiques et spécifications du moteur.",
+      "fichier": "pdfs/fiche-technique-moteur.pdf"
+    },
+    {
+      "id": "fiche-technique-dimensions",
+      "nom": "Fiche technique dimensions",
+      "categorie": "fiches-techniques",
+      "motsCles": ["dimensions", "poids", "encombrement"],
+      "description": "Dimensions et poids détaillés.",
+      "fichier": "pdfs/fiche-technique-dimensions.pdf"
+    },
+    {
+      "id": "guide-demarrage-rapide",
+      "nom": "Guide de démarrage rapide",
+      "categorie": "guides",
+      "motsCles": ["demarrage", "premiere utilisation", "configuration"],
+      "description": "Les premières étapes pour bien démarrer.",
+      "fichier": "pdfs/guide-demarrage-rapide.pdf"
+    },
+    {
+      "id": "guide-depannage",
+      "nom": "Guide de dépannage",
+      "categorie": "guides",
+      "motsCles": ["panne", "erreur", "depannage"],
+      "description": "Solutions aux problèmes les plus fréquents.",
+      "fichier": "pdfs/guide-depannage.pdf"
+    }
+  ]
+}
