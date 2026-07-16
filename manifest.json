@@ -1,66 +1,286 @@
 {
   "categories": [
-    { "id": "manuels", "nom": "Manuels" },
-    { "id": "fiches-techniques", "nom": "Fiches techniques" },
-    { "id": "guides", "nom": "Guides pratiques" },
-    { "id": "animation", "nom": "Nos animations" }
+    { "id": "education", "nom": "Education" },
+    { "id": "firstaid", "nom": "FirstAid" },
+    { "id": "games", "nom": "Games" },
+    { "id": "toolkits", "nom": "ToolKits" },
+    { "id": "food-management", "nom": "Food Management" },
+    { "id": "faq", "nom": "FAQ" }
   ],
   "fichiers": [
     {
-      "id": "manuel-animation",
-      "nom": "Manuel des animations",
-      "categorie": "animation",
-      "motsCles": ["animation", "demarrage", "utilisation"],
-      "description": "Guide complet de prise en main des animations.",
+      "id": "depressive-desordes",
+      "nom": "Depressive Desordes (FR)",
+      "categorie": "education",
+      "motsCles": ["Mental","health"],
+      "description": "Mental Health Management Guide.",
+      "fichier": "https://drive.google.com/file/d/11J85jF6lLlMhs8u35b36DOmNf6uRkOWv/view"
+    },
+    {
+      "id": "stress",
+      "nom": "Stress",
+      "categorie": "education",
+      "motsCles": ["stress", "partecipants", "expectations","fears"],
+      "description": "Stress Management During a Work Camp.",
       "fichier": "https://drive.google.com/file/d/1QkU1MYhaRIlvj3VjCibKG3f_dhPwXMdf/view"
     },
     {
-      "id": "manuel-utilisateur",
-      "nom": "Manuel utilisateur",
-      "categorie": "manuels",
-      "motsCles": ["installation", "demarrage", "utilisation"],
-      "description": "Guide complet de prise en main du produit.",
-      "fichier": "https://drive.google.com/file/d/1QkU1MYhaRIlvj3VjCibKG3f_dhPwXMdf/view"
+      "id": "emergency",
+      "nom": "Emergency",
+      "categorie": "education",
+      "motsCles": ["personal", "crisis", "panic"],
+      "description": "How to Help a Volunteer in an Emergency .",
+      "fichier": "https://handbook.inexsda.cz/cms/emergencies"
     },
     {
-      "id": "manuel-maintenance",
-      "nom": "Manuel de maintenance",
-      "categorie": "manuels",
-      "motsCles": ["entretien", "reparation", "pieces"],
-      "description": "Procédures d'entretien et de réparation courantes.",
-      "fichier": "pdfs/manuel-maintenance.pdf"
+      "id": "diversityandinclusiveness",
+      "nom": "Diversity and Inclusiveness",
+      "categorie": "education",
+      "motsCles": ["lgbtq", "inclusion", "language","gender"],
+      "description": "Guide to Inclusive Language",
+      "fichier": "https://drive.google.com/file/d/1P6Imc4Z00iNLRWjs0Izf6DWbQpx4M9ET/view"
     },
     {
-      "id": "fiche-technique-moteur",
-      "nom": "Fiche technique moteur",
-      "categorie": "fiches-techniques",
-      "motsCles": ["moteur", "specifications", "puissance"],
-      "description": "Caractéristiques et spécifications du moteur.",
-      "fichier": "pdfs/fiche-technique-moteur.pdf"
+      "id": "mental-health",
+      "nom": "Mental Health and Volunteers(FR)",
+      "categorie": "education",
+      "motsCles": ["emotions", "psychology", "mental-health","crisis","social","exclusion"],
+      "description": "Useful tools for managing mental health in a work camp and ensuring that everyone's needs are recognized and addressed",
+      "fichier":"https://drive.google.com/file/d/1AohoDTGwy_N_xFI-hjLC0wS4u-8Ez6cz/view"
     },
     {
-      "id": "fiche-technique-dimensions",
-      "nom": "Fiche technique dimensions",
-      "categorie": "fiches-techniques",
-      "motsCles": ["dimensions", "poids", "encombrement"],
-      "description": "Dimensions et poids détaillés.",
-      "fichier": "pdfs/fiche-technique-dimensions.pdf"
+      "id": "mental-health",
+      "nom": "Mental Health(FR)",
+      "categorie": "education",
+      "motsCles": ["Reactivation","anxiety","psychotic", "crisis"],
+      "description": "How to take volunteers' psychological well-being into account and what we can do to help them feel safe, supported, and comfortable during a workcamp.",
+      "fichier": "https://drive.google.com/file/d/1pw1J2bGFxSrEdh2f_k-KYZmziUd5tqCv/view"
     },
     {
-      "id": "guide-demarrage-rapide",
-      "nom": "Guide de démarrage rapide",
-      "categorie": "guides",
-      "motsCles": ["demarrage", "premiere utilisation", "configuration"],
-      "description": "Les premières étapes pour bien démarrer.",
-      "fichier": "pdfs/guide-demarrage-rapide.pdf"
+      "id": "aerer",
+      "nom": "AERER(FR)",
+      "categorie": "education",
+      "motsCles": ["approach", "people", "active","listening","encouraging","comfort","reassurance"],
+      "description": "The AERER plan is a pedagogical acronym designed to help remember how to manage an extremely difficult situation and how to establish contact with the person involved.",
+      "fichier": "https://drive.google.com/file/d/1ltNJiSLdV7ysOF9W29D2kNYDVT99-vQa/view"
+    },
+     {
+      "id": "alimentation",
+      "nom": "Alimentation(FR)",
+      "categorie": "education",
+      "motsCles": ["managing", "eating", "food","disorders"],
+      "description": "Supporting people with eating disorders.",
+      "fichier": "https://drive.google.com/file/d/1iuU9rzrpPw9KMb7uROJJ77ITyTh0L5ih/view"
+    },
+     {
+      "id": "mood-desorders",
+      "nom": "Mood Desorders(FR)",
+      "categorie": "education",
+      "motsCles": ["negative", "positive", "neutre","feelings","eco","anxiety","depressiv"],
+      "description": "Being able to recognize and identify mood disorders.",
+      "fichier": "https://drive.google.com/file/d/16SjQ14Eaj4J7Ja5rVxYlqIyqMSUDcxEt/view"
+    },
+     {
+      "id": "panic",
+      "nom": "Panic(FR)",
+      "categorie": "firstaid",
+      "motsCles": ["managing", "attack", "panic","book"],
+      "description": "How to support someone during a panic attack",
+      "fichier": "https://drive.google.com/file/d/12tZOtUQwTN-GkhJxUDJRjSyLTEt0KODI/view"
+    },
+     {
+      "id": "alcool",
+      "nom": "Alcool(FR)",
+      "categorie": "firstaid",
+      "motsCles": ["Alcohol", "consumption", "guide","book","support"],
+      "description": "Supporting Volunteers with Alcohol-Related Issues.",
+      "fichier": "https://drive.google.com/file/d/1F5mlvOgg8KIl7kmR3y4NwXJQFkgIpgMv/view"
+    },
+     {
+      "id": "adolescence",
+      "nom": "Adolescence(FR)",
+      "categorie": "firstaid",
+      "motsCles": ["Communicating", "Teenagers", "reinforcement","Understanding"],
+      "description": "Effective Communication with Adolescents.",
+      "fichier": "https://drive.google.com/file/d/10A89GiluXSN9CC012l6CFbZ3yWN2Lf-a/view"
+    },
+     {
+      "id": "trauma",
+      "nom": "Trauma(FR)",
+      "categorie": "firstaid",
+      "motsCles": ["Stay", "calm", "present","safe","trauma"],
+      "description": "What to Do After a Traumatic Event.",
+      "fichier": "https://drive.google.com/file/d/1uCMZzv95M5mdz4g8uX_t2iw1QdIGTu4R/view"
+    },
+     {
+      "id": "depression-informations",
+      "nom": "Depression Informations(FR)",
+      "categorie": "firstaid",
+      "motsCles": ["signs", "depression", "Emotional","feelings","Guidance."],
+      "description": "How to Recognize Signs of Depression and Provide Support",
+      "fichier": "https://drive.google.com/file/d/1jENL5-SjD1JxGx91jUa8pBTw8lcFO54V/view"
+    },
+     {
+      "id": "hyperventilation",
+      "nom": "Hyperventilation(FR)",
+      "categorie": "firstaid",
+      "motsCles": ["attack", "panic", "hyperventilation","Calming","anxiety","Breathing"],
+      "description": "How to Respond to Hyperventilation Episodes.",
+      "fichier": "https://drive.google.com/file/d/1ZZqpOZ9rUeFXnOlEPmy9LtNCg511Ami4/view"
+    },
+     {
+      "id": "panic-attack",
+      "nom": "Panic Attack(FR)",
+      "categorie": "firstaid",
+      "motsCles": ["Breathing", "panic", "support","Follow","techniques","anxiety","help"],
+      "description": "How to Handle a Panic Attack at a Workcamp.",
+      "fichier": "https://handbook.inexsda.cz/cms/emergencies"
+    },
+      {
+      "id": "Game-book",
+      "nom": "Game Book",
+      "categorie": "games",
+      "motsCles": ["Workcamp","book", "activity","Icebreaker","Non-formal","education","Team"],
+      "description": "Workcamp Activity Book: Games and Activities for Group Building",
+      "fichier": "https://drive.google.com/file/d/1PAia0-DDEJKmpBJyz75ruCZi5KXwFUh-/view"
+    },
+      {
+      "id": "games-activity",
+      "nom": "Games And Activity",
+      "categorie": "games",
+      "motsCles": ["Icebreakers", "Intercultural", "Energisers","party","games","methods","Evaluation"],
+      "description": "Activity Book on Team Building, Energizers, and Feedback Collection.",
+      "fichier": "https://drive.google.com/file/d/1JVkySv-kJvRMSgrd5bgYgMbOqYokkBoU/view"
+    },
+      {
+      "id": "envelopes-sitation",
+      "nom": "Envelopes sitations",
+      "categorie": "games",
+      "motsCles": ["situationes", "camp", "leader","problem","solving"],
+      "description": "Training Scenarios for Handling Challenges in a Workcamp.",
+      "fichier": "https://drive.google.com/file/d/1loqix2Gf4SadylzfHie8o-Acv10FFnH6/view"
+    },
+      {
+      "id": "inspiration-questions",
+      "nom": "Insipartions Questions",
+      "categorie": "games",
+      "motsCles": ["questions", "game", "safe","space","language","inclusion"],
+      "description": "Questions that can be used to create games",
+      "fichier": "https://drive.google.com/file/d/1WgbqW2HoK1XCgDmaN193FlhgLkKmH5Dj/view"
+    },
+      {
+      "id": "camp-leaders-games",
+      "nom": "Camp Leaders Games",
+      "categorie": "games",
+      "motsCles": ["Toolkit", "Training", "Collection","Seminar","camp","leaders","games"],
+      "description": "Toolkit of games used during the camp leader seminar",
+      "fichier": "https://drive.google.com/file/d/1LpUSP1qT1aakdRMO_Snpl5DBIlDRqusL/view"
+    },
+      {
+      "id": "toolkit",
+      "nom": "Toolkit",
+      "categorie": "toolkits",
+      "motsCles": ["Toolkit", "Training", "Collection","Seminar","camp","leaders","games"],
+      "description": "Toolkit of games used during the camp leader seminar",
+      "fichier": "https://drive.google.com/file/d/1LpUSP1qT1aakdRMO_Snpl5DBIlDRqusL/view"
+    },
+  {
+      "id": "leaders-manual",
+      "nom": "Leaders Manual",
+      "categorie": "toolkits",
+      "motsCles": ["Methods", "advice", "animations","Food","provide","display","games"],
+      "description": "A practical toolkit for camp leaders, providing essential tools and guidance to organize and manage a successful workcamp.",
+      "fichier": "https://drive.google.com/file/d/1FS4HJG_kc_SDfOS2QtKhk3f0VlNeKZPe/view"
+    },
+  {
+      "id": "camp-leading-guide",
+      "nom": "Campleading Guide",
+      "categorie": "toolkits",
+      "motsCles": ["Toolkit", "finances", "food","before","during","after","games"],
+      "description": "A practical toolkit for camp leaders, offering guidance, tools, and references to support the organization, coordination, and successful management of a workcamp.",
+      "fichier": "https://drive.google.com/file/d/1nGihzoaWqr-rWu6dFIrkRnHJi-pWjSeR/view"
+    },
+  {
+      "id": "international-projects",
+      "nom": "International Projects",
+      "categorie": "toolkits",
+      "motsCles": ["Toolkit", "Knowledge", "Values","Skills","Objectives","Insurance","Group"],
+      "description": "Toolkit of games used during the camp leader seminar",
+      "fichier": "https://drive.google.com/file/d/10wqZ74f7-ABe5fvVmjfK5RGewe4HerVR/view"
+    },
+  {
+      "id": "hand-book",
+      "nom": "Hand book",
+      "categorie": "toolkits",
+      "motsCles": ["Toolkit", "Conflict", "MANAGEMENT","REFLECTION","TOOLS","SPACE","TIPS"],
+      "description": "Toolkit of games by alliance",
+      "fichier": "https://drive.google.com/file/d/1XBLpajktsUZK55Cnx2VtY5JnusFT-vfY/view"
+    },
+  {
+      "id": "how-to-lead",
+      "nom": "How To Lead",
+      "categorie": "toolkits",
+      "motsCles": ["Toolkit", "kitchen", "durty","public","relation","organising","prevention"],
+      "description": "manual of how to lead a camp",
+      "fichier": "https://drive.google.com/file/d/1hdSgY6y4hKRWM0Rp-u3xE8RmC537iohg/view"
+    },
+  {
+      "id": "leadership",
+      "nom": "Leadership",
+      "categorie": "toolkits",
+      "motsCles": ["teambuidling", "activities", "reflection","sessions","practical","tasks","sustainability "],
+      "description": "Toolkit of games and how to approach gender and sustainability issues",
+      "fichier": "https://handbook.inexsda.cz/"
+    },
+  {
+      "id": "environment",
+      "nom": "Environment Toolbox",
+      "categorie": "toolkits",
+      "motsCles": ["Methods", "manual", "environment","Energizer","Preception","Excursions","Group breakdown"],
+      "description": "Methodological Manual for International Workcamps in an Environmental Context",
+      "fichier": "https://drive.google.com/file/d/1KbPUEc7ks6awntDJuVc73PkMqCQKfT2c/view"
+    },
+  {
+      "id": "challenges-solutions",
+      "nom": "Challenges Solutions",
+      "categorie": "toolkits",
+      "motsCles": ["Teenagers", "prectical", "workshop","social","inclusion","legal","contracts"],
+      "description": "Toolkit: GO with Teenagers – Engagement and Empowerment through Networking",
+      "fichier": "https://drive.google.com/file/d/1R4wRdZjkOS3LywJyEkzmMps0_8tResZQ/view"
     },
     {
-      "id": "guide-depannage",
-      "nom": "Guide de dépannage",
-      "categorie": "guides",
-      "motsCles": ["panne", "erreur", "depannage"],
-      "description": "Solutions aux problèmes les plus fréquents.",
-      "fichier": "pdfs/guide-depannage.pdf"
+      "id": "food-management",
+      "nom": "Food infosheet",
+      "categorie": "food-management",
+      "motsCles": ["food", "ENVIRONMENT", "waste","social","Tap","water","CO2"],
+      "description": "How to manage food sustainably in a volunteer workcamp",
+      "fichier": "https://drive.google.com/file/d/1Up04UGc3j30fFQV7CnMZOTj3iVvfRpVc/view"
+    },
+     {
+      "id": "draw",
+      "nom": "Draw",
+      "categorie": "faq",
+      "motsCles": ["draw", "free", "space","what","you","want","love"],
+      "description": "free space for drawing",
+      "fichier": "https://docs.google.com/drawings/d/1lYbIEerzamej2_Gffi20VH9Lsgc9O2jr6Lv7Nw49OQ0/edit"
+    },
+     {
+      "id": "tips",
+      "nom": "Tips",
+      "categorie": "faq",
+      "motsCles": ["Communicate ", "partner", "smile","free","time","eat","tips"],
+      "description": "How to manage food sustainably in a volunteer workcamp",
+      "fichier": "https://docs.google.com/document/d/10cdcWRQotka7k4JZKwPahoZ9W6RBgIqQ/edit"
+    },
+     {
+      "id": "safe-space",
+      "nom": "Safe Space",
+      "categorie": "faq",
+      "motsCles": ["Frequently", "Asked", "Questions","how","Speak","personal","experience"],
+      "description": "Some of the most frequently asked questions we have received",
+      "fichier": "https://docs.google.com/document/d/13e_2675QKdnZ-GsI4GBn-Rbv4ILF7mRX/edit"
     }
+
+
   ]
 }
