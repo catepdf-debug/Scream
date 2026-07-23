@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --color-bg: #ffffff;
   --color-text: #1a1a1a;
   --color-primary: #2563eb;
@@ -7,9 +7,9 @@
   --color-border: #e5e7eb;
   --color-surface: #f9fafb;
   --radius: 10px;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #111827;
     --color-text: #f3f4f6;
@@ -17,6 +17,82 @@
     --color-border: #374151;
     --color-surface: #1f2937;
   }
+} */
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+width: 100%;
+max-width: 500px;
+}
+
+.polpo-logo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  width: 50%;
+
+  
+ 
+}
+.polpo-logo img{
+  width: 100%;
+  max-width: 500px;
+
+  
+}
+.polpo-logo h1{
+  text-align: center;
+  
+}
+.alliance-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  
+
+}
+.alliance-logo img{
+max-width: 500px;
+
+
+  
+}
+
+.swipe-up-container{
+  height: 20%;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrows{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.arrow-icon{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  width: 100px;
+  padding: 20px;
+  margin: 0px;
+  top: 0px;
+}
+
+.arrows .arrow-icon:nth-child(2){
+  top:-20px
 }
 
 * {
@@ -26,18 +102,20 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  background: #CBEEF3;
   color: var(--color-text);
 }
 
-.site-header {
+/* .site-header {
   position: sticky;
   top: 0;
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   padding: 1rem;
   z-index: 10;
-}
+} */
 
 .logo-link {
   text-decoration: none;
@@ -74,9 +152,11 @@ main#content {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  align-items: center;
 }
 
 .search-form input[type="search"] {
+  stroke: black;
   flex: 1;
   padding: 0.75rem;
   border: 1px solid var(--color-border);
@@ -87,6 +167,7 @@ main#content {
 }
 
 .search-form button {
+  stroke: black;
   padding: 0.75rem 1rem;
   border: none;
   border-radius: var(--radius);

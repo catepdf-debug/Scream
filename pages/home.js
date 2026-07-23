@@ -6,6 +6,35 @@ export async function renderHome(content) {
   const { categories } = await getManifest();
 
   content.innerHTML = `
+   <div class="container">
+    <div class="polpo-logo">
+      <img src="Scream.png" alt="Logo Scream" />
+        <h1>For A Safer Space For Camp Leaders</h1>
+    </div>
+    
+
+    <section class="app-search-bar" aria-label="Recherche">
+        <form id="global-search-form" class="search-form">
+          <input type="search" id="global-search-input" placeholder="Rechercher un document..." autocomplete="off" />
+          <button type="submit">Rechercher</button>
+        </form>
+      </section>
+    <div class="alliance-logo">
+      <h2> Project lead by </h2>
+      <img src="Alliance-Logo-214x300.png">
+    </div>
+
+    <div class="swipe-up-container">
+    <div class="arrows">
+      <div class="arrow-icon">
+        <img src="./assets/arrow-up.svg" alt="Arrow Up Icon" />
+        </div>
+      </div>
+      <div>
+        <button class="swipe-up">Swipe Up To Explore All Categories </button>
+      </div>
+    </div>
+    </div>
     <section class="categories-section">
       <h2>Catégories</h2>
       <ul class="category-list">
