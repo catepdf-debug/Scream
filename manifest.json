@@ -1,11 +1,11 @@
 {
   "categories": [
-    { "id": "education", "nom": "Education", "image": "./assets/education.jpg" },
-    { "id": "firstaid", "nom": "FirstAid", "image": "./assets/firstaid.png" },
-    { "id": "games", "nom": "Games", "image": "./assets/games.png" },
-    { "id": "toolkits", "nom": "ToolKits", "image": "./assets/toolkits.png" },
-    { "id": "food-management", "nom": "Food Management", "image": "./assets/food-management.png" },
-    { "id": "faq", "nom": "FAQ", "image": "./assets/faq.png" }
+    { "id": "education", "nom": "Education", "image":"glasses.jpg" },
+    { "id": "firstaid", "nom": "FirstAid", "image": "aid.jpg" },
+    { "id": "games", "nom": "Games", "image": "ball.jpg" },
+    { "id": "toolkits", "nom": "ToolKits", "image": "toolkit.jpg" },
+    { "id": "food-management", "nom": "Food Management", "image": "food.jpg" },
+    { "id": "faq", "nom": "FAQ", "image": "faq.jpg" }
   ],
   "fichiers": [
     {

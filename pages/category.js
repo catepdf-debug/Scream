@@ -17,7 +17,6 @@ export async function renderCategory(content, categoryId) {
     <a href="#/categories" class="back-link">&larr; Toutes les catégories</a>
     <h2>${category.nom}</h2>
     <img src="${category.image}" alt="${category.nom}" class="category-image" />
-    <p>Nombre de fichiers: ${files.length}</p>
     <h3>Fichiers</h3>
     <ul class="file-list">
       ${files.map(fileCardHtml).join("") || "<p>Aucun fichier dans cette catégorie.</p>"}

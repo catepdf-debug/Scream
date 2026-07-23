@@ -30,7 +30,9 @@
   height: 100%;
   overflow-y: auto;
   transition: transform 500ms ease;
+  gap: 40px;
 }
+
 
 .categories-section{
   position: absolute;
@@ -61,10 +63,10 @@
   text-align: center;
   height: auto;
   width: 50%;
-
-  
- 
 }
+
+
+
 .polpo-logo img{
   width: 100%;
   max-width: 500px;
@@ -254,6 +256,7 @@ main#content {
 
 .category-list,
 .file-list {
+  
   list-style: none;
   padding: 0;
   margin: 0;
@@ -262,8 +265,25 @@ main#content {
       align-items: center;
   gap: 14px;
 }
+.category-list li:nth-child(3n+1){
+  background-color: #B04B9A;
+  border-radius: 20px;
+}
+.category-list li:nth-child(3n+2){
+  background-color: #2280C2;
+  border-radius: 20px;
+}
+.category-list li:nth-child(3n+3){
+  background-color: #214395;
+  border-radius: 20px;
+}
+
+.back-link{
+  background-color: aqua;
+}
 
 .category-link {
+  width: 50vh;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -294,10 +314,6 @@ main#content {
   margin-bottom: 0.5rem;
   border-radius: 2rem;
   aspect-ratio: square;
-}
-
-{
-  background-color: blue;
 }
 
 .category-link .count {
