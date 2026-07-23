@@ -15,11 +15,12 @@ export async function renderHome(content) {
     <section class="app-search-bar" aria-label="Recherche">
         <form id="global-search-form" class="search-form">
           <input type="search" id="global-search-input" placeholder="Rechercher un document..." autocomplete="off" />
-          <button type="submit">Rechercher</button>
+         
         </form>
       </section>
     <div class="alliance-logo">
-      <h2> Project lead by </h2>
+      <h2> Community of interest <br>
+       SCREAM on behalf of </h2>
       <img src="Alliance-Logo-214x300.png">
     </div>
 
