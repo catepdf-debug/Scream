@@ -254,12 +254,12 @@ main#content {
 
 .category-list,
 .file-list {
-  
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+      align-items: center;
   gap: 14px;
 }
 
@@ -272,6 +272,10 @@ main#content {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 600;
+}
+
+{
+  background-color: blue;
 }
 
 .category-link .count {
@@ -344,7 +348,6 @@ main#content {
 @media (min-width: 640px) {
   .category-list,
   .file-list {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
