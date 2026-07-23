@@ -5,7 +5,7 @@ export async function renderCategories(content) {
   const { categories, fichiers } = await getManifest();
 
   content.innerHTML = `
-  fhfh
+    <span class="back-link"><a href="#/">&#8592; Retour à l'accueil</a></span>
     <h2>Toutes les catégories</h2>
     <ul class="category-list">
       ${categories.map((cat) => {
