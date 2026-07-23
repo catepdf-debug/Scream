@@ -1,11 +1,11 @@
 {
   "categories": [
-    { "id": "education", "nom": "Education" },
-    { "id": "firstaid", "nom": "FirstAid" },
-    { "id": "games", "nom": "Games" },
-    { "id": "toolkits", "nom": "ToolKits" },
-    { "id": "food-management", "nom": "Food Management" },
-    { "id": "faq", "nom": "FAQ" }
+    { "id": "education", "nom": "Education", "image": "./assets/education.jpg" },
+    { "id": "firstaid", "nom": "FirstAid", "image": "./assets/firstaid.png" },
+    { "id": "games", "nom": "Games", "image": "./assets/games.png" },
+    { "id": "toolkits", "nom": "ToolKits", "image": "./assets/toolkits.png" },
+    { "id": "food-management", "nom": "Food Management", "image": "./assets/food-management.png" },
+    { "id": "faq", "nom": "FAQ", "image": "./assets/faq.png" }
   ],
   "fichiers": [
     {

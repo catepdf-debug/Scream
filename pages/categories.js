@@ -10,7 +10,7 @@ export async function renderCategories(content) {
     <ul class="category-list">
       ${categories.map((cat) => {
         const count = fichiers.filter((f) => f.categorie === cat.id).length;
-        return `<li><a href="#/categorie/${cat.id}" class="category-link">${cat.nom} <span class="count">(${count})</span></a></li>`;
+        return `<li><a href="#/categorie/${cat.id}" class="category-link"><img src="${cat.image}" alt="${cat.nom}" class="categories-image" />${cat.nom}<span class="count">(${count})</span></a></li>`;
       }).join("")}
     </ul>
   `;
