@@ -197,6 +197,19 @@ main#content {
   z-index: 10;
 }
 
+.home-search-slot {
+  width: 100%;
+}
+
+.app-search-bar--inline {
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
 .app-search-bar .search-form {
   margin-bottom: 0;
 }
