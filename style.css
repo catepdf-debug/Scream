@@ -47,22 +47,41 @@ max-width: 500px;
 }
 .polpo-logo h1{
   text-align: center;
-  
+  font-size: medium;
+  width: 100%;
+  white-space: nowrap;
 }
 .alliance-logo{
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+  .alliance-logo img{
+    width: 20%;
+  max-width: 500px;
+  }
+  .alliance-logo h2{
+    font-weight: 10;
+  }
+
+  .swipe-up{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #CBEEF3;
+    border-color: #214395;
+    border-width: 3px;
+
+  }
+
 
   
 
-}
-.alliance-logo img{
-max-width: 500px;
 
-
-  
-}
 
 .swipe-up-container{
   height: 20%;
@@ -70,6 +89,7 @@ max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .arrows{
@@ -156,15 +176,19 @@ main#content {
 }
 
 .search-form input[type="search"] {
+ width: 100%;
   stroke: black;
   flex: 1;
   padding: 0.75rem;
   border: 1px solid var(--color-border);
-  border-radius: var(--radius);
+  border-radius:30px;
   font-size: 1rem;
   background: var(--color-surface);
   color: var(--color-text);
+  background-color: white;
+  
 }
+
 
 .search-form button {
   stroke: black;
