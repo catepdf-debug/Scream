@@ -6,13 +6,12 @@ export async function renderHome(content) {
   const { categories } = await getManifest();
 
   content.innerHTML = `
+  <div class="wrapper-swipe-up">
    <div class="container">
     <div class="polpo-logo">
       <img src="Scream.png" alt="Logo Scream" />
         <h1>For A Safer Space For Camp Leaders</h1>
     </div>
-    
-
     <section class="app-search-bar" aria-label="Recherche">
         <form id="global-search-form" class="search-form">
           <input type="search" id="global-search-input" placeholder="Rechercher un document..." autocomplete="off" />
@@ -43,5 +42,12 @@ export async function renderHome(content) {
         `).join("")}
       </ul>
     </section>
+    </div>
   `;
+
+  const wrapper = content.querySelector(".wrapper-swipe-up");
+  const swipeUpBtn = content.querySelector(".swipe-up");
+  swipeUpBtn.addEventListener("click", () => {
+    wrapper.classList.add("open");
+  });
 }
