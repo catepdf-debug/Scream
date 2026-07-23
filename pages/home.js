@@ -1,10 +1,6 @@
-import { getManifest } from "../data.js";
+import { renderCategories } from "./categories.js";
 
 export async function renderHome(content) {
-  content.innerHTML = `<p class="loading">Chargement...</p>`;
-
-  const { categories } = await getManifest();
-
   content.innerHTML = `
   <div class="wrapper-swipe-up">
    <div class="container">
@@ -30,20 +26,30 @@ export async function renderHome(content) {
       </div>
     </div>
     </div>
-    <section class="categories-section">
-      <h2>Catégories</h2>
-      <ul class="category-list">
-        ${categories.map((cat) => `
-          <li><a href="#/categorie/${cat.id}" class="category-link">${cat.nom}</a></li>
-        `).join("")}
-      </ul>
-    </section>
-    </div>
+   <section class="categories-section"></section>
+  </div>
   `;
 
   const wrapper = content.querySelector(".wrapper-swipe-up");
+  const container = content.querySelector(".container");
+  const categoriesSection = content.querySelector(".categories-section");
   const swipeUpBtn = content.querySelector(".swipe-up");
-  swipeUpBtn.addEventListener("click", () => {
+
+  swipeUpBtn.addEventListener("click", async () => {
+    if (wrapper.classList.contains("open")) return;
+    swipeUpBtn.disabled = true;
+
+    // Reveal the real categories page underneath before sliding, so the
+    // swipe-up animation exposes loaded content instead of a loading flash.
+    await renderCategories(categoriesSection);
     wrapper.classList.add("open");
+
+    container.addEventListener(
+      "transitionend",
+      () => {
+        location.hash = "#/categories";
+      },
+      { once: true }
+    );
   });
 }
