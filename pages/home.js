@@ -12,6 +12,7 @@ export async function renderHome(content) {
       <img src="Scream.png" alt="Logo Scream" />
         <h1>For A Safer Space For Camp Leaders</h1>
     </div>
+    <div id="home-search-slot" class="home-search-slot"></div>
     <div class="alliance-logo">
       <h2> Community of interest <br>
        SCREAM on behalf of </h2>
