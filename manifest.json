@@ -1,11 +1,11 @@
 {
   "categories": [
-    { "id": "education", "nom": "Education", "image":"glasses.jpg" },
-    { "id": "firstaid", "nom": "FirstAid", "image": "aid.jpg" },
-    { "id": "games", "nom": "Games", "image": "ball.jpg" },
-    { "id": "toolkits", "nom": "ToolKits", "image": "toolkit.jpg" },
-    { "id": "food-management", "nom": "Food Management", "image": "food.jpg" },
-    { "id": "faq", "nom": "FAQ", "image": "faq.jpg" }
+    { "id": "education", "nom": "Education", "image":"glasses.jpg", "color":"#B04B9A" },
+    { "id": "firstaid", "nom": "FirstAid", "image": "aid.jpg", "color":"#2280C2" },
+    { "id": "games", "nom": "Games", "image": "ball.jpg", "color":"#214395" },
+    { "id": "toolkits", "nom": "ToolKits", "image": "toolkit.jpg", "color":"#B04B9A" },
+    { "id": "food-management", "nom": "Food Management", "image": "food.jpg", "color":"#2280C2" },
+    { "id": "faq", "nom": "FAQ", "image": "faq.jpg", "color":"#214395" }
   ],
   "fichiers": [
     {
@@ -42,7 +42,7 @@
     },
     {
       "id": "mental-health",
-      "nom": "Mental Health and Volunteers(FR)",
+      "nom": "Mental Health & Volunteers(FR)",
       "categorie": "education",
       "motsCles": ["emotions", "psychology", "mental-health","crisis","social","exclusion"],
       "description": "Useful tools for managing mental health in a work camp and ensuring that everyone's needs are recognized and addressed",

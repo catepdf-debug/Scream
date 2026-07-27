@@ -5,12 +5,12 @@ export function fileCardHtml(f) {
     : `download`;
 
   return `
-    <li class="file-card">
-      <h3>${f.nom}</h3>
-      <p class="file-description">${f.description}</p>
-      <div class="file-tags">${f.motsCles.map((m) => `<span class="tag">${m}</span>`).join("")}</div>
-      <a href="${f.fichier}" ${linkAttrs} class="download-btn">Télécharger le PDF</a>
-    </li>
+    <a href="${f.fichier}" ${linkAttrs} class="download-btn">
+      <li class="file-card">
+        <h3>${f.nom}</h3>
+        <div class="file-tags">${f.motsCles.map((m) => `<span class="tag">${m}</span>`).join("")}</div>
+      </li>
+    </a>
   `;
 }
 

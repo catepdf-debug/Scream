@@ -4,7 +4,13 @@
   --font-principale:"Manrope", sans-serif;
 }
 
-
+.back-link a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-decoration: none;
+}
 .wrapper-swipe-up{
   display: flex;
   flex-direction: column;
@@ -205,7 +211,7 @@ main#content {
 
 .app-search-bar--inline {
   position: static;
-  width: 100%;
+  width: 50vh;
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -257,15 +263,20 @@ main#content {
 .category-list,
 .file-list {
   
+    overflow-y: auto;
+    overflow-x: hidden;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
       align-items: center;
+      align-content: center;
   gap: 14px;
+  scrollbar-width: none;
 }
-.category-list li:nth-child(3n+1){
+
+/* .category-list li:nth-child(3n+1){
   background-color: #B04B9A;
   border-radius: 20px;
 }
@@ -276,10 +287,13 @@ main#content {
 .category-list li:nth-child(3n+3){
   background-color: #214395;
   border-radius: 20px;
-}
+} */
 
-.back-link{
-  background-color: aqua;
+.category-list li{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
 }
 
 .category-link {
@@ -296,6 +310,18 @@ main#content {
   font-weight: 600;
 }
 
+.file-list{
+   border: 3px solid #3498db;
+    border-radius: 50px;
+        width: 50vh;
+    height: 450px;
+    
+}
+
+
+
+
+
 .categories-image {
   width: 50px;
   height: 50px;
@@ -307,8 +333,10 @@ main#content {
 }
 
 .category-image {
-  width: 100%;
-  height: auto;
+      width: 50vh;
+    height: 182px;
+  border: 3px solid;
+  height: auto182px;
   object-fit: cover;
   display: block;
   margin-bottom: 0.5rem;
@@ -323,14 +351,17 @@ main#content {
 }
 
 .file-card {
-  padding: 1rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
+  font-family: var(--font-principale);
+  font-weight: normal;
+  color: black;
+ border: 3px solid #214395;
+    border-radius: 50px;
+
 }
 
 .file-card h3 {
-  margin: 0 0 0.5rem;
+  margin: 10px;
+  font-weight: 400;
 }
 
 .file-description {
@@ -339,10 +370,7 @@ main#content {
 }
 
 .file-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 0.75rem;
+  display: none;
 }
 
 .tag {

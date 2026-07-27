@@ -14,11 +14,11 @@ export async function renderCategory(content, categoryId) {
   }
 
   content.innerHTML = `
-    <a href="#/categories" class="back-link">&larr; Toutes les catégories</a>
-    <h2>${category.nom}</h2>
-    <img src="${category.image}" alt="${category.nom}" class="category-image" />
-    <h3>Fichiers</h3>
-    <ul class="file-list">
+    <a href="#/categories">
+    <img src="arrow left-circle.png" alt="Indietro">
+    </a>
+    <img src="${category.image}" style="border-color:${category.color};" alt="${category.nom}" class="category-image" />
+    <ul class="file-list" style="border-color: ${category.color};">
       ${files.map(fileCardHtml).join("") || "<p>Aucun fichier dans cette catégorie.</p>"}
     </ul>
   `;
