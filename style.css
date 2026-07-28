@@ -365,8 +365,56 @@ main#content {
   color: black;
  border: 3px solid #214395;
     border-radius: 50px;
-
 }
+
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b04b9ace;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.evidenza{
+    color:#B04B9A; 
+   font-weight: 800;
+   font-family: var(--font-principale);
+}
+#scritta{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.popup {
+    background: #d9f5ff;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.514);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mini-card {
+    height:220px;
+}
+
+
+.mini-card img {
+    width: 95px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
 
 .file-card h3 {
   margin: 10px;
@@ -382,6 +430,54 @@ main#content {
   display: none;
 }
 
+.testo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+    height: 220px;
+    width: 250px;
+    align-content: space-between;
+}
+#capito,
+#chiudi{
+    width:120px;
+    height:40px;
+    border-radius:25px;
+    border:none;
+    cursor:pointer;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap: 10px;
+font-family: var(--font-principale);
+    font-size:14px;
+}
+
+
+
+#capito{
+    background:#214395;
+    color:white;
+   
+}
+
+
+#chiudi{
+       border: 3px solid #214395;
+   background-color:#d9f5ff;
+    color: #333;
+    margin-left: 8px;
+   
+}
+
+
+
+#chiudi img{
+    width:16px;
+    height:16px;
+}
 .tag {
   font-size: 0.75rem;
   background: var(--color-border);

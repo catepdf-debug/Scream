@@ -19,3 +19,15 @@ export async function renderCategories(content) {
     </ul>
   `;
 }
+
+let scritta = document.getElementById("scritta");
+let overlay = document.getElementById("overlay");
+let chiudi = document.getElementById("chiudi");
+
+scritta.onclick = function(){
+    overlay.style.display = "flex";
+};
+
+chiudi.onclick = function(){
+    overlay.style.display = "none";
+};
