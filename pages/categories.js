@@ -1,4 +1,5 @@
 import { getManifest } from "../data.js";
+import { openAnonymousModal } from "../modal.js";
 
 export async function renderCategories(content) {
   content.innerHTML = `<p class="loading">Chargement...</p>`;
@@ -17,17 +18,12 @@ export async function renderCategories(content) {
         return `<li style="background-color:${cat.color};"><a href="#/categorie/${cat.id}" class="category-link"><img src="${cat.image}" alt="${cat.nom}" class="categories-image" />${cat.nom}</a></li>`;
       }).join("")}
     </ul>
+
+    <a href="#" class="anonymous-trigger">
+        <span class="evidenza">Click to Send</span> an Anonymous Message
+    </a>
   `;
+
+  content.querySelector(".anonymous-trigger")?.addEventListener("click", openAnonymousModal);
 }
 
-let scritta = document.getElementById("scritta");
-let overlay = document.getElementById("overlay");
-let chiudi = document.getElementById("chiudi");
-
-scritta.onclick = function(){
-    overlay.style.display = "flex";
-};
-
-chiudi.onclick = function(){
-    overlay.style.display = "none";
-};

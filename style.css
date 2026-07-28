@@ -414,7 +414,7 @@ main#content:has(.wrapper-swipe-up) {
 }
 
 .overlay {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -431,10 +431,17 @@ main#content:has(.wrapper-swipe-up) {
    font-weight: 800;
    font-family: var(--font-principale);
 }
-#scritta{
+#scritta,
+.anonymous-trigger {
   text-decoration: none;
   color: black;
   font-weight: 600;
+}
+
+.anonymous-trigger {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
 }
 .popup {
     background: #d9f5ff;

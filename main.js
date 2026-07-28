@@ -2,6 +2,7 @@ import { renderHome } from "./pages/home.js";
 import { renderCategories } from "./pages/categories.js";
 import { renderCategory } from "./pages/category.js";
 import { renderSearch } from "./pages/search.js";
+import "./modal.js";
 
 const content = document.getElementById("content");
 const globalSearchForm = document.getElementById("global-search-form");
