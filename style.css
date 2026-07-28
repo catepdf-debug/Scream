@@ -18,7 +18,7 @@
   align-items: center;
   height: 95vh;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -28,8 +28,8 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  /* width: 100%;
-  max-width: 500px; */
+  width: 100%;
+  max-width: 600px;
   position: absolute;
   top: 0;
   left: 0;
@@ -234,8 +234,9 @@ main#content {
 .search-form input[type="search"] {
 
   width: 100%;
+  max-width: calc(600px - 2rem);
+  margin: 0 auto;
   stroke: black;
-  /* flex: 1; */
   padding: 0.75rem;
   border: 1px solid var(--color-border);
   border-radius:30px;
