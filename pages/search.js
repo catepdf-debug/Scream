@@ -6,6 +6,11 @@ export async function renderSearch(content, initialQuery = "") {
   const { categories, fichiers } = await getManifest();
 
   content.innerHTML = `
+    <span class="back-link">
+      <a href="#/">
+          <img src="arrowcircle.png" alt="Indietro">
+      </a>
+  </span>
     <section class="search-results-section">
       <h2>Résultats de recherche</h2>
       <div id="search-results"></div>
