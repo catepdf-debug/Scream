@@ -7,7 +7,7 @@ export async function renderCategories(content) {
   content.innerHTML = `
   <span class="back-link">
     <a href="#/">
-        <img src="arrow left-circle.png" alt="Indietro">
+        <img src="arrowcircle.png" alt="Indietro">
     </a>
 </span>
 

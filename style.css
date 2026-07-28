@@ -358,6 +358,15 @@ main#content {
     border-radius: 50px;
 
 }
+.file-card:hover {
+  background-color: #6eadda8f;
+  font-family: var(--font-principale);
+  font-weight: normal;
+  color: black;
+ border: 3px solid #214395;
+    border-radius: 50px;
+
+}
 
 .file-card h3 {
   margin: 10px;

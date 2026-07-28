@@ -15,7 +15,7 @@ export async function renderCategory(content, categoryId) {
 
   content.innerHTML = `
     <a href="#/categories">
-    <img src="arrow left-circle.png" alt="Indietro">
+    <img src="arrowcircle.png" alt="Indietro">
     </a>
     <img src="${category.image}" style="border-color:${category.color};" alt="${category.nom}" class="category-image" />
     <ul class="file-list" style="border-color: ${category.color};">
