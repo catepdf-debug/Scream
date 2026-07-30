@@ -2,11 +2,13 @@ import { renderHome } from "./pages/home.js";
 import { renderCategories } from "./pages/categories.js";
 import { renderCategory } from "./pages/category.js";
 import { renderSearch } from "./pages/search.js";
-import "./modal.js";
+import { openAnonymousModal } from "./modal.js";
 
 const content = document.getElementById("content");
 const globalSearchForm = document.getElementById("global-search-form");
 const globalSearchInput = document.getElementById("global-search-input");
+const globalBackLink = document.getElementById("global-back-link");
+const globalAnonymousTrigger = document.getElementById("global-anonymous-trigger");
 const searchBar = document.querySelector(".app-search-bar");
 const searchBarDefaultParent = searchBar.parentNode;
 const searchBarDefaultNextSibling = searchBar.nextSibling;
@@ -76,6 +78,20 @@ if (globalSearchForm && globalSearchInput) {
   });
 }
 
+globalAnonymousTrigger?.addEventListener("click", openAnonymousModal);
+
+const BACK_TARGETS = {
+  categories: "#/",
+  categorie: "#/categories",
+  recherche: "#/",
+};
+
+function syncBackLink(path) {
+  if (globalBackLink) {
+    globalBackLink.href = BACK_TARGETS[path] || "#/";
+  }
+}
+
 function parseHash() {
   const raw = location.hash.slice(1) || "/";
   const [pathPart, queryPart] = raw.split("?");
@@ -90,6 +106,7 @@ async function router() {
   const searchQuery = params.get("q") || "";
 
   syncGlobalSearch(searchQuery);
+  syncBackLink(path);
   ejectSearchBarFromContent();
 
   if (!path) {

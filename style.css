@@ -4,13 +4,6 @@
   --font-principale:"Manrope", sans-serif;
 }
 
-.back-link a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    text-decoration: none;
-}
 .wrapper-swipe-up{
   display: flex;
   flex-direction: column;
@@ -216,12 +209,14 @@ main#content:has(.wrapper-swipe-up) {
 .app-search-bar {
   position: sticky;
   bottom: 0;
-  /* max-width: 600px;
-  width: 100%; */
+  max-width: 600px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   background: var(--color-bg);
   z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .home-search-slot {
@@ -237,7 +232,16 @@ main#content:has(.wrapper-swipe-up) {
   background: transparent;
 } */
 
+/* On home the search bar docks inline in #home-search-slot on its own;
+   the back-link/email button only belong to the bottom nav bar. */
+.app-search-bar--inline .back-link,
+.app-search-bar--inline .anonymous-trigger {
+  display: none;
+}
+
 .app-search-bar .search-form {
+  flex: 1;
+  min-width: 0;
   margin-bottom: 0;
 }
 
@@ -429,22 +433,27 @@ main#content:has(.wrapper-swipe-up) {
     z-index: 999;
 }
 
-.evidenza{
-    color:#B04B9A; 
-   font-weight: 800;
-   font-family: var(--font-principale);
-}
-#scritta,
-.anonymous-trigger {
+#scritta {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
 
 .anonymous-trigger {
-  display: block;
-  text-align: center;
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* background: #B04B9A; */
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+  font-family: var(--font-principale);
+  border: black 4px solid;
 }
 .popup {
     background: #d9f5ff;
@@ -553,10 +562,24 @@ font-family: var(--font-principale);
 }
 
 .back-link {
-  display: inline-block;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.back-link img,  {
+  width: 32px;
+  height: 32px;
+}
+
+.anonymous-trigger img {
+  width: 28px;
+  height: 28px;
 }
 
 .loading,
