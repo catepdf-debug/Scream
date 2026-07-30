@@ -69,26 +69,27 @@
   gap: 5px;
   text-align: center;
   height: auto;
-  width: 50%;
+  width: 100%;
 }
 
 
 
 .polpo-logo img{
-  width: auto;
+  width: 50%;
   height: auto;
   max-width: min(100%, 500px);
-  max-height: 16vh;
+  max-height: 50vh;
 }
 .polpo-logo h1{
+  font-weight: 500;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: var(--font-principale);
   text-align: center;
-  font-size: medium;
+  font-size:x-large;
   width: 100%;
-  white-space: nowrap;
+
 
 }
 .alliance-logo{
@@ -104,13 +105,15 @@
     width: auto;
   height: auto;
   max-width: min(20%, 500px);
-  max-height: 8vh;
+  max-height: 50vh;
   }
   .alliance-logo h2{
     font-weight: 10;
+    font-family: var(--font-principale);
   }
 
   .swipe-up{
+    font-family: var(--font-principale);
     padding: clamp(10px, 3vh, 20px);
     margin: clamp(8px, 2vh, 20px);
     border-radius: 30px;
