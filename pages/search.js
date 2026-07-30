@@ -6,13 +6,7 @@ export async function renderSearch(content, initialQuery = "") {
   const { categories, fichiers } = await getManifest();
 
   content.innerHTML = `
-    <span class="back-link">
-      <a href="#/">
-          <img src="arrowcircle.png" alt="Indietro">
-      </a>
-  </span>
     <section class="search-results-section">
-      <h2>Résultats de recherche</h2>
       <div id="search-results"></div>
     </section>
   `;
@@ -36,20 +30,10 @@ export async function renderSearch(content, initialQuery = "") {
     const matchedFiles = fileFuse.search(query).map((r) => r.item);
 
     results.innerHTML = `
-      ${matchedCategories.length ? `
-        <section>
-          <h3>Catégories</h3>
-          <ul class="category-list">
-            ${matchedCategories.map((c) => `<li><a href="#/categorie/${c.id}" class="category-link">${c.nom}</a></li>`).join("")}
-          </ul>
-        </section>
-      ` : ""}
-
       ${matchedFiles.length ? `
         <section>
-          <h3>Fichiers (${matchedFiles.length})</h3>
           <ul class="file-list">
-            ${matchedFiles.map(fileCardHtml).join("")}
+            ${matchedFiles.map((f) => fileCardHtml(f, categories)).join("")}
           </ul>
         </section>
       ` : ""}
