@@ -136,13 +136,6 @@
   
 }
 
-.arrows{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-}
 
 .arrow-icon{
   display: flex;
@@ -351,7 +344,8 @@ main#content:has(.wrapper-swipe-up) {
 
 }
 
-.category-link {
+.category-link {font-family:var(--font-principale);
+  color: white;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -360,8 +354,8 @@ main#content:has(.wrapper-swipe-up) {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   text-decoration: none;
-  color: var(--color-text);
-  font-weight: 600;
+  font-weight: 300;
+  font-size: x-large;
 }
 
 .file-list{
@@ -442,6 +436,7 @@ main#content:has(.wrapper-swipe-up) {
 }
 
 .anonymous-trigger {
+  font-family: var(--font-principale);
   display: block;
   text-align: center;
   margin-top: 1rem;

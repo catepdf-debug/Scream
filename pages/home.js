@@ -5,25 +5,23 @@ export async function renderHome(content) {
   <div class="wrapper-swipe-up">
    <div class="container">
     <div class="polpo-logo">
-      <img src="Scream.png" alt="Logo Scream" />
-        <h1>For A Safer Space For Camp Leaders</h1>
+      <img src="./assets/Scream.png" alt="Logo Scream" />
+        <h1>For a Safer Space for Camp Leaders</h1>
     </div>
     <div id="home-search-slot" class="home-search-slot"></div>
+    <div>
+        <button class="swipe-up">SCREAM Around Categories </button>
+      </div>
     <div class="alliance-logo">
-      <h2> Community of interest <br>
-       SCREAM on behalf of </h2>
-      <img src="Alliance-Logo-214x300.png">
+      <h2> Community of Interest <br>
+       SCREAM on Behalf of: </h2>
+      <img src="./assets/Alliance-Logo-214x300.png">
     </div>
 
     <div class="swipe-up-container">
-    <div class="arrows">
-      <div class="arrow-icon">
-        <img src="./assets/arrow-up.svg" alt="Arrow Up Icon" />
-        </div>
+   
       </div>
-      <div>
-        <button class="swipe-up">Swipe Up To Explore All Categories </button>
-      </div>
+      
     </div>
     </div>
    <section class="categories-section"></section>
