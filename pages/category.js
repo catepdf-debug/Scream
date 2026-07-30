@@ -16,7 +16,7 @@ export async function renderCategory(content, categoryId) {
   content.innerHTML = `
     <img src="${category.image}" style="border-color:${category.color};" alt="${category.nom}" class="category-image" />
     <ul class="file-list" style="border-color: ${category.color};">
-      ${files.map(fileCardHtml).join("") || "<p>Aucun fichier dans cette catégorie.</p>"}
+      ${files.map((f) => fileCardHtml(f, categories)).join("") || "<p>Aucun fichier dans cette catégorie.</p>"}
     </ul>
   `;
 }

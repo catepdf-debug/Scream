@@ -4,6 +4,31 @@ import { renderCategory } from "./pages/category.js";
 import { renderSearch } from "./pages/search.js";
 import { openAnonymousModal } from "./modal.js";
 
+// iOS Safari never shrinks 100vh/100dvh when the on-screen keyboard opens
+// (only Android/Chrome does via interactive-widget=resizes-content), so the
+// only reliable signal is window.visualViewport, which does report the
+// keyboard-shrunk height. Mirror it into a CSS var the body's height reads,
+// so our fixed-height flex layout actually shrinks and the results list
+// keeps fitting in the remaining space instead of needing a page scroll.
+//
+// Focusing the input also makes iOS pan the visual viewport up over the
+// (unscrolled) layout viewport to keep the caret visible above the keyboard.
+// Our body is `position: fixed`, which is anchored to the layout viewport,
+// so that pan alone would shove our whole UI off the top of the screen.
+// visualViewport.offsetTop reports exactly that pan amount, so mirroring it
+// into the body's `top` keeps the fixed UI glued to the visual viewport.
+function syncViewport() {
+  const vv = window.visualViewport;
+  const height = vv ? vv.height : window.innerHeight;
+  const offsetTop = vv ? vv.offsetTop : 0;
+  document.documentElement.style.setProperty("--app-height", `${height}px`);
+  document.documentElement.style.setProperty("--app-offset-top", `${offsetTop}px`);
+}
+syncViewport();
+window.visualViewport?.addEventListener("resize", syncViewport);
+window.visualViewport?.addEventListener("scroll", syncViewport);
+window.addEventListener("resize", syncViewport);
+
 const content = document.getElementById("content");
 const globalSearchForm = document.getElementById("global-search-form");
 const globalSearchInput = document.getElementById("global-search-input");
