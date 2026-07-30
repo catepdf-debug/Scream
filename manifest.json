@@ -1,9 +1,9 @@
 {
   "categories": [
     { "id": "education", "nom": "Education", "image":"./assets/glasses.jpg", "color":"#B04B9A" },
-    { "id": "firstaid", "nom": "FirstAid", "image": "./assets/aid.jpg", "color":"#2280C2" },
+    { "id": "firstaid", "nom": "First Aid", "image": "./assets/aid.jpg", "color":"#2280C2" },
     { "id": "games", "nom": "Games", "image": "./assets/ball.jpg", "color":"#214395" },
-    { "id": "toolkits", "nom": "ToolKits", "image": "./assets/toolkit.jpg", "color":"#B04B9A" },
+    { "id": "toolkits", "nom": "Tool Kits", "image": "./assets/toolkit.jpg", "color":"#B04B9A" },
     { "id": "food-management", "nom": "Food Management", "image": "./assets/food.jpg", "color":"#2280C2" },
     { "id": "faq", "nom": "FAQ", "image": "./assets/faq.jpg", "color":"#214395" }
   ],

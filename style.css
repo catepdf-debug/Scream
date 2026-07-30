@@ -479,14 +479,14 @@ main#content:has(.wrapper-swipe-up) {
     border-radius: 30px;
     padding: 20px;
     display: flex;
-    width: 60vw;
+    width: 90vw;
     gap: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.514);
     justify-content: center;
     align-items: center;
 }
 
-@media (min-width:768px) {
+@media (min-width:600px) {
   .popup{
     width: 450px;
   }
@@ -522,13 +522,20 @@ main#content:has(.wrapper-swipe-up) {
 }
 
 .testo{
+  font-family: var(--font-principale);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2px;
-    height: 220px;
     width: 250px;
     align-content: space-between;
+}
+
+.testo div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 #capito,
 #chiudi{

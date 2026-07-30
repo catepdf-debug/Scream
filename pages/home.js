@@ -15,8 +15,14 @@ export async function renderHome(content) {
     <div class="alliance-logo">
       <h2> Community of Interest <br>
        SCREAM on Behalf of: </h2>
-      <img src="./assets/Alliance-Logo-214x300.png">
+       <a href="https://www.alliance-network.eu/">
+       <img src="./assets/Alliance-Logo-214x300.png">
+       <a>
+
     </div>
+
+
+      
     </div>
     </div>
    <section class="categories-section"></section>
