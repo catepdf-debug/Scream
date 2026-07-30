@@ -474,14 +474,22 @@ main#content:has(.wrapper-swipe-up) {
   border: black 4px solid;
 }
 .popup {
+
     background: #d9f5ff;
     border-radius: 30px;
     padding: 20px;
     display: flex;
+    width: 60vw;
     gap: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.514);
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width:768px) {
+  .popup{
+    width: 450px;
+  }
 }
 
 
