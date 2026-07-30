@@ -17,11 +17,6 @@ export async function renderHome(content) {
        SCREAM on Behalf of: </h2>
       <img src="./assets/Alliance-Logo-214x300.png">
     </div>
-
-    <div class="swipe-up-container">
-   
-      </div>
-      
     </div>
     </div>
    <section class="categories-section"></section>
