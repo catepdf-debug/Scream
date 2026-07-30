@@ -10,7 +10,7 @@ export async function renderHome(content) {
     </div>
     <div id="home-search-slot" class="home-search-slot"></div>
     <div>
-        <button class="swipe-up">SCREAM Around Categories </button>
+        <button class="swipe-up">Find Your SCREAM Category</button>
       </div>
     <div class="alliance-logo">
       <h2> Community of Interest <br>
