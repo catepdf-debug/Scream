@@ -105,6 +105,8 @@
   }
 
   .swipe-up{
+    color: black;
+    font-weight: 500;
     font-family: var(--font-principale);
     padding: clamp(10px, 3vh, 20px);
     margin: clamp(8px, 2vh, 20px);
